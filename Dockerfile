@@ -10,7 +10,5 @@ COPY requirements.txt /
 RUN pip install -r requirements.txt
 COPY *.py /
 COPY *.sh /
-ENV KEYSTORE_URL="NOTSET"
-ENV TARGET_URL="NOTSET"
 
 CMD ["/bin/bash", "-c", "/loop.sh"]

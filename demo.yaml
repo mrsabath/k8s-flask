@@ -24,8 +24,6 @@ spec:
   replicas: 1
   template:
     metadata:
-      annotations:
-        admission.trusted.identity/inject: "true"
       labels:
         app: flask
       name: flask
